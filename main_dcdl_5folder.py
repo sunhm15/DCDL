@@ -147,8 +147,8 @@ def get_args():
     parser.add_argument('-ls', '--leave_subject', type=int)
     parser.add_argument('-lr', '--learning_rate', type=float)
     parser.add_argument('-e', '--epoch', type=int, default=0)
-    parser.add_argument('-k', '--k_floder', type=int, default=3)
-    parser.add_argument('-n', '--floder_number', type=int, default=0)
+    parser.add_argument('-k', '--k_layer', type=int, default=3)
+    parser.add_argument('-n', '--folder_number', type=int, default=0)
     parser.add_argument('-lam', '--lambda_3', type=float, default=1)
     parser.add_argument('-r', '--resume', type=str, default=None)
     parser.add_argument('-rd', '--result_directory', type=str, default=None)
@@ -175,26 +175,26 @@ def main():
         batch_size = args.batch_size
         if args.load_wiki:
             model_dict['load_wiki'] = args.load_wiki
-        model_dict['k'] = args.k_floder
+        model_dict['k'] = args.k_layer
 
-        floder_num = args.floder_number
+        folder_number = args.folder_number
         # RS
         # total_data_temp = [np.loadtxt('list/morph/rs/%d.txt'%(i+1), dtype=str, delimiter=',') for i in range(5)]
         # SE
         total_data_temp = [np.loadtxt('list/morph/se/%d.txt'%(i+1), dtype=str, delimiter=',') for i in range(5)]
         total_data = []
         for i in range(5):
-            floder_data = []
+            folder_data = []
             for j in range(len(total_data_temp[i])):
-                floder_data.append('data/morph/img/'+total_data_temp[i][j])
-            total_data.append(floder_data)
+                folder_data.append('data/morph/img/'+total_data_temp[i][j])
+            total_data.append(folder_data)
         train_filepath_list = []
         for i in range(5):
-            if i==floder_num:
+            if i==folder_num:
                 continue
             train_filepath_list.extend(total_data[i])
-        test_filepath_list = total_data[floder_num]
-        args.result_directory = "results/MORPH/mv/dcdl_k%d_f%d"%(args.k_floder, floder_num+1)
+        test_filepath_list = total_data[folder_num]
+        args.result_directory = "results/MORPH/mv/dcdl_k%d_f%d"%(args.k_folder, folder_num+1)
         print(args.result_directory)
 
         if args.result_directory is not None:
