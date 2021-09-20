@@ -21,6 +21,20 @@ Age estimation is a challenging task not only because face appearance is affecte
   python main_dcdl_5folder.py -i [MORPH II path] -e 100 -lr 0.001 -b 32 -lw [wiki pretrained model's path] -n [folder_num]
 ```
 
+## Citation
 
+If you find this work useful, please cite our paper with the following bibtex:
+```
+@ARTICLE{SunTIFS2021,
+  author={Haomiao Sun, Hongyu Pan, Hu Han, Shiguang Shan},
+  journal={IEEE Transactions on Information Forensics and Security}, 
+  title={Deep Conditional Distribution Learning for Age Estimation}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={},
+  doi={10.1109/TIFS.2021.3114066}
+}
+```
 ---
 Other code will be released later.
