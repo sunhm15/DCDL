@@ -30,9 +30,9 @@ If you find this work useful, please cite our paper with the following bibtex:
   journal={IEEE Transactions on Information Forensics and Security}, 
   title={Deep Conditional Distribution Learning for Age Estimation}, 
   year={2021},
-  volume={},
+  volume={16},
   number={},
-  pages={},
+  pages={4679-4690},
   doi={10.1109/TIFS.2021.3114066}
 }
 ```
