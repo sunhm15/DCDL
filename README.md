@@ -1,6 +1,6 @@
 # DCDL-Pytorch
 
-This repo provide a pytorch version for "Deep Conditional Distribution Learningfor Age Estimation" in TIFS2021. 
+This repo provide a pytorch version for "Deep Conditional Distribution Learning for Age Estimation" in TIFS2021. 
 
 ## Abstract
 
