@@ -16,6 +16,9 @@ Age estimation is a challenging task not only because face appearance is affecte
 ```
   python main_wiki.py -i [IMDB-WIKI path] -e 100 -lr 0.01 -b 32 
 ```
+
+- You can get the pretrained model in [this url](https://drive.google.com/file/d/1fNsMyhhqsFSgop-u06IvjZ8x02LdL21r/view?usp=sharing)
+
 #### Train DCDL model on MORPH II
 ```
   python main_dcdl_5folder.py -i [MORPH II path] -e 100 -lr 0.001 -b 32 -lw [wiki pretrained model's path] -n [folder_num]
@@ -36,5 +39,3 @@ If you find this work useful, please cite our paper with the following bibtex:
   doi={10.1109/TIFS.2021.3114066}
 }
 ```
----
-Other code will be released later.
