@@ -9,7 +9,7 @@ Age estimation is a challenging task not only because face appearance is affecte
 ## DataSet
 
 - Age-Estimation：MORPH II, AgeDB, FG-NET, MegaAge-Asian, CLAP2016, UTK-Face, and LFW+.
-- Height, weight and BMI estimation: VIP and VIPL-Mumo-3K-Demo (VIPL3KFace, which contains age, gender, height, weight attributes, and will be released later.)
+- Height, weight and BMI estimation: VIP and VIPL-Mumo-3K-Demo (a private dataset, which contains age, gender, height, and weight attributes.)
 
 ## Train
 #### Pretrain with IMDB-WIKI
